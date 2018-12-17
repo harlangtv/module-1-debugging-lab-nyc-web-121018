@@ -1,7 +1,9 @@
 
+  def super_mario_party
+    "Sorry, your princess is in another castle"
+  end
 
-super_mario_party
+  super_mario_party
 
-def super_mario_party
-  "Sorry, your princess is in another castle"
-end
+
+  ## Test passes after calling the method after it is defined. 

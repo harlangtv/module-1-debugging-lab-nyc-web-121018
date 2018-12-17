@@ -12,7 +12,7 @@ def crew
 end
 
 def greet_crew (crew)
-  crew.each {|crew_member| "Hello #{crew_member}."}
+  crew.map {|crew_member| "Hello #{crew_member}."}
 end
 
 def engage
@@ -20,3 +20,7 @@ def engage
   state_log(date)
   greet_crew(crew)
 end
+
+
+
+#changed crew.each to crew.map to return a new array as opposed to returning the original Array

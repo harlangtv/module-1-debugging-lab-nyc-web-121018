@@ -1,6 +1,7 @@
 class GasStation
 
-  attr_reader :brand, :unleaded_price
+  attr_accessor :unleaded_price
+  attr_reader :brand #:unleaded_price
 
   def initialize(brand, unleaded_price)
     @brand = brand
@@ -12,3 +13,6 @@ end
 petrol_petes = GasStation.new("Petrol Pete's", 50)
 seashore_shell = GasStation.new("The Seashore Shell", 40)
 dinobones = GasStation.new("Dino Bones Gas and Grill", 60)
+
+
+## changed unleaded_price from attr_reader to an attr_accessor in order to change the price. 
